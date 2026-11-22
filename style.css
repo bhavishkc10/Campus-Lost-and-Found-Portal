@@ -1,0 +1,705 @@
+
+/* =================================
+   CAMPUS LOST & FOUND PORTAL
+   Theme: Teal, White and Light Grey
+================================= */
+
+/* 1. Basic webpage settings */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f7;
+    color: #263838;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* 2. Header */
+
+header {
+    background-color: #0f766e;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+header p {
+    margin: 0;
+    font-size: 17px;
+}
+
+/* 3. Navigation bar */
+
+nav {
+    background-color: #115e59;
+    text-align: center;
+    padding: 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 4. Main content */
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+
+/* 5. Headings */
+
+h1, h2, h3 {
+    color: #115e59;
+}
+
+header h1 {
+    color: white;
+}
+
+/* 6. Links and buttons */
+
+a {
+    color: #0f766e;
+}
+
+input[type="submit"] {
+    background-color: #0f766e;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #115e59;
+}
+
+/* 7. Forms */
+
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid #cbd5d5;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+legend {
+    color: #0f766e;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #cbd5d5;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 8. Item listings */
+
+article {
+    background-color: #f4f9f8;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #0f766e;
+    border-radius: 8px;
+}
+
+/* 9. Footer */
+
+footer {
+    background-color: #115e59;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* 10. Horizontal lines */
+
+hr {
+    border: none;
+    border-top: 1px solid #d5e1e0;
+}
+
+/* 11. Mobile responsive design */
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    main {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+}
+
+/* Homepage Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0f766e, #134e4a);
+    color: white;
+    text-align: center;
+    padding: 50px 30px;
+    border-radius: 15px;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+}
+
+.button {
+    display: inline-block;
+    background-color: white;
+    color: #115e59;
+    text-decoration: none;
+    padding: 13px 22px;
+    margin: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #d9f3ef;
+}
+/* Feature Cards */
+.features {
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 30px;
+}
+
+.feature-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+    background-color: #f4f9f8;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #d5e1e0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.feature-card h3 {
+    margin-top: 0;
+}
+
+.feature-card p {
+    color: #526565;
+}
+/* Campus Impact Section */
+.impact {
+    text-align: center;
+    background-color: #e6f4f2;
+}
+
+.impact-intro {
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.impact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.impact-card {
+    background-color: white;
+    padding: 25px;
+    min-width: 180px;
+    border-radius: 12px;
+    flex: 1;
+    border: 1px solid #cce5e1;
+}
+
+.impact-card h3 {
+    font-size: 28px;
+    color: #0f766e;
+    margin-bottom: 8px;
+}
+
+.impact-card p {
+    margin: 0;
+    color: #526565;
+}
+/* Professional Navigation Bar */
+nav {
+    background-color: #115e59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    margin: 0;
+}
+
+nav a:hover {
+    background-color: #0f766e;
+    text-decoration: none;
+}
+/* Professional Footer */
+footer {
+    background-color: #134e4a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer a {
+    color: #ccfbf1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Professional Form Design */
+
+form {
+    max-width: 750px;
+    margin: 25px auto;
+}
+
+fieldset {
+    background-color: #ffffff;
+    border: 1px solid #d5e1e0;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5d5;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #ffffff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Highlight fields when selected */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0f766e;
+    box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+}
+
+/* Submit Button */
+input[type="submit"] {
+    margin-top: 25px;
+    padding: 14px 25px;
+    width: 100%;
+    max-width: 250px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #134e4a;
+}
+/* Item Listing Cards */
+
+section:has(article) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+section:has(article) > h2 {
+    grid-column: 1 / -1;
+}
+
+article {
+    background-color: #ffffff;
+    padding: 22px;
+    margin: 0;
+    border: 1px solid #d5e1e0;
+    border-left: 5px solid #0f766e;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.09);
+}
+
+article h3 {
+    margin-top: 0;
+    color: #115e59;
+}
+
+article p {
+    line-height: 1.7;
+}
+/* Item Status Labels */
+
+.item-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.lost-badge {
+    background-color: #fff0e8;
+    color: #c2410c;
+}
+
+.found-badge {
+    background-color: #dcfce7;
+    color: #166534;
+}
+/* Item Listings Page */
+.listings-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
+}
+
+.item-card {
+    background-color: white;
+    border: 1px solid #d5e1e0;
+    border-radius: 12px;
+    padding: 22px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.item-status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.lost-status {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.found-status {
+    background-color: #d1fae5;
+    color: #047857;
+}
+
+.item-card h3 {
+    margin-top: 5px;
+}
+
+.item-card p {
+    color: #526565;
+    margin: 8px 0;
+}
+
+.item-card strong {
+    color: #263838;
+}
+/* Listings Search and Filter */
+.search-section {
+    text-align: center;
+}
+
+#searchInput,
+#statusFilter {
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid #cbd5d5;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+#searchInput {
+    width: 60%;
+    max-width: 450px;
+}
+
+#statusFilter {
+    width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+    #searchInput,
+    #statusFilter {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
+/* Form Submission Success Message */
+.success-message {
+    display: none;
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    background-color: #ffffff;
+    color: #115e59;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Dark Theme */
+body.dark-mode {
+    background-color: #182222;
+    color: #e5eeee;
+}
+
+body.dark-mode header {
+    background-color: #183f3c;
+}
+
+body.dark-mode nav {
+    background-color: #102f2d;
+}
+
+body.dark-mode section {
+    background-color: #243333;
+    color: #e5eeee;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #75d5c8;
+}
+
+body.dark-mode header h1 {
+    color: white;
+}
+
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #134e4a, #102f2d);
+}
+
+body.dark-mode .feature-card,
+body.dark-mode .impact-card,
+body.dark-mode .item-card,
+body.dark-mode fieldset {
+    background-color: #2b3d3d;
+    color: #e5eeee;
+    border-color: #496060;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: #1d2d2d;
+    color: white;
+    border-color: #526969;
+}
+
+body.dark-mode article {
+    background-color: #2b3d3d;
+}
+
+body.dark-mode footer {
+    background-color: #102f2d;
+}
+
+body.dark-mode .feature-card p,
+body.dark-mode .impact-card p,
+body.dark-mode .item-card p {
+    color: #c4d6d6;
+}
+
+body.dark-mode .button {
+    background-color: #2b3d3d;
+    color: #75d5c8;
+}
+
+body.dark-mode .button:hover {
+    background-color: #3b5151;
+}
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #0f766e;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#backToTop:hover {
+    background-color: #115e59;
+    transform: translateY(-3px);
+}
+/* Website Branding */
+.brand-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 32px;
+    margin-bottom: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+header {
+    padding: 35px 20px;
+}
+
+.brand-logo:hover {
+    transform: scale(1.08);
+    transition: 0.3s;
+}
+header h1 {
+    letter-spacing: 0.5px;
+}
+
+header p {
+    opacity: 0.95;
+}

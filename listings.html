@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Listings | Campus Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header><div class="brand-logo">🔎</div>
+        <h1>Campus Lost & Found Listings</h1>
+        <p>Browse items reported lost or found on campus.</p>
+    </header>
+
+    <hr>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="lost.html">Report Lost</a> |
+        <a href="found.html">Report Found</a> |
+        <a href="listings.html">View Listings</a>
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+    </nav>
+
+    <hr>
+
+    <main>
+<section class="search-section">
+    <h2>Search Campus Items</h2>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by item name..."
+    >
+
+    <select id="statusFilter">
+        <option value="all">All Items</option>
+        <option value="lost">Lost Items</option>
+        <option value="found">Found Items</option>
+    </select>
+</section>
+        <section>
+            <h2>Lost Items</h2>
+
+            <article>
+                <span class="item-badge lost-badge">LOST ITEM</span>
+                <h3>1. Black Water Bottle</h3>
+                <p><strong>Category:</strong> Accessories</p>
+                <p><strong>Colour:</strong> Black</p>
+                <p><strong>Location:</strong> College Library</p>
+                <p><strong>Description:</strong> A black water bottle left near the reading area.</p>
+            </article>
+            <article class="item-card" data-status="lost"></article>
+<article class="item-card">
+
+    <span class="item-status lost-status">
+        LOST ITEM
+    </span>
+    <h3>Black Water Bottle</h3>
+
+    <p><strong>Category:</strong> Personal Belongings</p>
+    <p><strong>Location:</strong> Campus Library</p>
+    <p><strong>Description:</strong> Black water bottle left behind.</p>
+
+</article>
+            <hr>
+
+            <article>
+                <span class="item-badge lost-badge">LOST ITEM</span>
+                <h3>2. Blue Notebook</h3>
+                <p><strong>Category:</strong> Books</p>
+                <p><strong>Colour:</strong> Blue</p>
+                <p><strong>Location:</strong> Classroom 204</p>
+                <p><strong>Description:</strong> A blue notebook reported missing after class.</p>
+            </article>
+            <article class="item-card" data-status="lost"></article>
+<article class="item-card">
+
+    <span class="item-status lost-status">
+        LOST ITEM
+    </span>
+
+    <h3>Black Water Bottle</h3>
+
+    <p><strong>Category:</strong> Personal Belongings</p>
+    <p><strong>Location:</strong> Campus Library</p>
+    <p><strong>Description:</strong> Black water bottle left behind.</p>
+
+</article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Found Items</h2>
+
+            <article>
+                <span class="item-badge found-badge">FOUND ITEM</span>
+                <h3>1. Student ID Card</h3>
+                <p><strong>Category:</strong> Documents</p>
+                <p><strong>Colour:</strong> White</p>
+                <p><strong>Location:</strong> College Canteen</p>
+                <p><strong>Description:</strong> An ID card found near the canteen entrance.</p>
+            </article>
+            <article class="item-card" data-status="found"></article>
+<span class="item-status found-status">
+    FOUND ITEM
+</span>
+            <hr>
+
+            <article>
+                <span class="item-badge found-badge">FOUND ITEM</span>
+                <h3>2. Black Earphones</h3>
+                <p><strong>Category:</strong> Electronics</p>
+                <p><strong>Colour:</strong> Black</p>
+                <p><strong>Location:</strong> College Parking Area</p>
+                <p><strong>Description:</strong> A pair of black earphones found near parking.</p>
+            </article>
+            <article class="item-card" data-status="found"></article>
+<span class="item-status found-status">
+    FOUND ITEM
+</span>
+        </section>
+
+        <hr>
+
+       <div class="listings-container">
+    <!-- Your item cards go here -->
+</div>
+<section>
+
+    <h2>Lost Items</h2>
+
+    <table border="1" cellpadding="10">
+
+        <tr>
+            <th>Item Name</th>
+            <th>Category</th>
+            <th>Colour</th>
+            <th>Location</th>
+        </tr>
+
+        <tr>
+            <td>Black Water Bottle</td>
+            <td>Accessories</td>
+            <td>Black</td>
+            <td>College Library</td>
+        </tr>
+
+        <tr>
+            <td>Blue Notebook</td>
+            <td>Books</td>
+            <td>Blue</td>
+            <td>Classroom 204</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<hr>
+
+
+<section>
+
+    <h2>Lost Items</h2>
+
+    <table border="1" cellpadding="10">
+
+        <tr>
+            <th>Sl. No.</th>
+            <th>Item Name</th>
+            <th>Category</th>
+            <th>Colour</th>
+            <th>Location</th>
+            <th>Date Reported</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Black Water Bottle</td>
+            <td>Accessories</td>
+            <td>Black</td>
+            <td>College Library</td>
+            <td>10-11-2026</td>
+            <td>Lost</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Blue Notebook</td>
+            <td>Books</td>
+            <td>Blue</td>
+            <td>Classroom 204</td>
+            <td>12-11-2026</td>
+            <td>Lost</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<hr>
+
+<section>
+
+    <h2>Found Items</h2>
+
+    <table border="1" cellpadding="10">
+
+        <tr>
+            <th>Sl. No.</th>
+            <th>Item Name</th>
+            <th>Category</th>
+            <th>Colour</th>
+            <th>Location</th>
+            <th>Date Reported</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Student ID Card</td>
+            <td>Documents</td>
+            <td>White</td>
+            <td>College Canteen</td>
+            <td>11-11-2026</td>
+            <td>Found</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Black Earphones</td>
+            <td>Electronics</td>
+            <td>Black</td>
+            <td>College Parking</td>
+            <td>13-11-2026</td>
+            <td>Found</td>
+        </tr>
+
+    </table>
+
+</section>
+
+
+
+    </main>
+
+    <hr>
+
+<footer>
+
+    <hr>
+
+    <h3>Campus Lost & Found Portal</h3>
+
+    <p>Helping students reunite with their belongings.</p>
+
+    <h4>Project Team Members</h4>
+
+    <ul>
+        <li>BHAVISH K C</li>
+        <li>HARSHITH G R</li>
+        <li>HARSHAN V S</li>
+    </ul>
+
+    <p>Academic Project | HTML5</p>
+
+    <p>&copy; 2026 Campus Lost & Found Portal</p>
+
+</footer>
+
+<script>
+    const searchInput = document.getElementById("searchInput");
+    const statusFilter = document.getElementById("statusFilter");
+    const itemCards = document.querySelectorAll(".item-card");
+
+    function filterItems() {
+        const searchText = searchInput.value.toLowerCase();
+        const selectedStatus = statusFilter.value;
+
+        itemCards.forEach(function(card) {
+            const itemText = card.textContent.toLowerCase();
+            const itemStatus = card.dataset.status;
+
+            const matchesSearch = itemText.includes(searchText);
+
+            const matchesStatus =
+                selectedStatus === "all" ||
+                itemStatus === selectedStatus;
+
+            if (matchesSearch && matchesStatus) {
+                card.style.display = "";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    }
+
+    searchInput.addEventListener("input", filterItems);
+    statusFilter.addEventListener("change", filterItems);
+</script>
+<script>
+    const darkModeButton = document.getElementById("darkModeToggle");
+
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+        darkModeButton.textContent = "☀️ Light Mode";
+    }
+
+    darkModeButton.addEventListener("click", function() {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+            darkModeButton.textContent = "☀️ Light Mode";
+        } else {
+            localStorage.setItem("theme", "light");
+            darkModeButton.textContent = "🌙 Dark Mode";
+        }
+    });
+</script>
+<script>
+    const backToTopButton = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    });
+
+    backToTopButton.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+</body>
+</html>
